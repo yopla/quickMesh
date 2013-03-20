@@ -2,3 +2,31 @@ quickMesh
 =========
 
 a simple modelization tool for make 2D mesh for Mesh Warp
+
+
+----
+
+
+what quickMeshBeta do for the moment ?
+
+load a image file at the beginning
+
+add point by -clicking-
+remove them with -right-clic-
+drag them
+
+make or remake a delaunay triangulation with -f-, and then :
+rollover the triangle center,
+delete triangle face with -d-   !!!! remove then 1 by 1 !!!!
+add triangle face with -a-
+
+save the mesh with -s-
+load the vertex of a *.obj with -l-
+erase with -e-
+
+
+
+don't know why, but the texture Y-coords need +1 with octaneExporter,
+so i've add a +1 button in max in the mesh viewport window ...
+
+only tri, so the subdivision doesn't do anything in MW :(
