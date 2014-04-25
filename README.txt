@@ -1,5 +1,7 @@
 quickMesh
 =========
+v0.5
+
 
 a simple modelization tool for make 2D mesh for Mesh Warp
 works in processing 1.5, 

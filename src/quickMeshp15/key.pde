@@ -42,6 +42,9 @@ void keyPressed() {
    camera(-XposCam+width/2.0, -YposCam+height/2.0, ZposCam*((height/2.0) / tan(PI*60.0 / 360.0)),
           -XposCam+ width/2.0, -YposCam+height/2.0, 0,
           0, 1, 0);
+          
+         
+          
  }
 
 

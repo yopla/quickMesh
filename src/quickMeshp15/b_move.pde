@@ -1,7 +1,7 @@
 boolean overBox = false;
 boolean locked = false;
 int quiOver = -1;
-float cirum = 10;
+
 boolean clicforTri = false; 
    
 void getOver(){  //
@@ -55,6 +55,9 @@ if (altlocked){
   
     ZposCam += .05*(mouseY - pmouseY);
     
+    taillePoint = ZposCam*8;
+    cirum = ZposCam*5;
+    circumG = ZposCam*5;
   }
   if (shiftlocked){
     XposCam += (mouseX - pmouseX);
@@ -80,7 +83,7 @@ void quidedans(){
         overBox = true;    
         quiOver = i;       
         fill(0, 255, 0);
-        ellipse(p.x, p.y, 10, 10);
+        ellipse(p.x, p.y,taillePoint, taillePoint);
       }   
    }
 }

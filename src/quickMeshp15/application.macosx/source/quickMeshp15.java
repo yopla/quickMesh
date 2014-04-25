@@ -54,7 +54,7 @@ public void setup() {
 
   oct = new octaneRenderer(this); 
  
- // setupControlWindow();
+  setupControlWindow();
 
 //javax.swing.JOptionPane.showMessageDialog(null, "Hello World");
 
@@ -184,9 +184,9 @@ public void draw() {
      tint (255, 150);
       for (int i = 0; i < triangles.size(); i++) {
         Triangle t = (Triangle)triangles.get(i);
-        vertex(t.p1.x, t.p1.y, t.p1.x,  t.p1.y);
-        vertex(t.p2.x, t.p2.y, t.p2.x,  t.p2.y);
-        vertex(t.p3.x, t.p3.y, t.p3.x,  t.p3.y); 
+        vertex(t.p1.x, t.p1.y,0, t.p1.x,  t.p1.y);
+        vertex(t.p2.x, t.p2.y,0, t.p2.x,  t.p2.y);
+        vertex(t.p3.x, t.p3.y,0, t.p3.x,  t.p3.y); 
       }
   endShape();
   tint (255, 100);

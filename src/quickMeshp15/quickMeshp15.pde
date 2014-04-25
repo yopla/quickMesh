@@ -17,7 +17,10 @@ ArrayList triangles = new ArrayList();
 ArrayList points = new ArrayList();
 ArrayList<Integer> removeTri = new ArrayList<Integer>();
 
-float circumG = 10;
+float circumG = 10; // zone de survol de la selection de triangle
+float taillePoint = 18; //taille des vertex
+float cirum = 10; // distance de selection de vertex
+
 
 void setup() { 
   
@@ -30,7 +33,7 @@ void setup() {
 
   oct = new octaneRenderer(this); 
  
- // setupControlWindow();
+  setupControlWindow();
 
 //javax.swing.JOptionPane.showMessageDialog(null, "Hello World");
 
@@ -62,7 +65,7 @@ void draw() {
   
   for (int i = 0; i < points.size(); i++) {
     PVector p = (PVector)points.get(i);
-    ellipse(p.x, p.y, 8.5, 8.5);
+    ellipse(p.x, p.y, taillePoint, taillePoint);
   }
   
   getOver();
@@ -121,7 +124,7 @@ void draw() {
          points.add (new PVector(xG, yG));
        }
       
-       fill(10, 10, 10, 25);   // dessine zone de survol
+       fill(10, 10, 10, 50);   // dessine zone de survol
        //tint (255, 5);
        strokeWeight(0);
        ellipse(xG, yG, circumG*2,circumG*2);
